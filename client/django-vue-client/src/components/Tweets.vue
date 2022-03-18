@@ -134,8 +134,8 @@ export default {
           contentType: "application/json; charset=utf-8",
           dataType: "json",
           data: JSON.stringify({
-            "username": `${this.username}`,
-            "tweet": `${this.tweet}`,
+            "username": this.username,
+            "tweet": this.tweet,
           }),
           success: function (data) {
             console.log(data);
